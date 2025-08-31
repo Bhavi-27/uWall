@@ -4,111 +4,7 @@
     <meta charset="UTF-8">
     <title>uWall - Chitkara University Punjab</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', Arial, sans-serif;
-            background: #fff;
-            color: #b71c1c;
-        }
-        header {
-            background: #b71c1c;
-            color: #fff;
-            padding: 0.5rem 0;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .logo-title {
-            display: flex;
-            align-items: center;
-            margin-left: 2rem;
-        }
-        .logo {
-            width: 40px;
-            height: 40px;
-            background: #fff;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #b71c1c;
-            font-weight: bold;
-            font-size: 1.5rem;
-            margin-right: 1rem;
-            overflow: hidden;
-        }
-        .logo img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            display: block;
-        }
-        .subtitle {
-            margin-right: 2rem;
-            font-size: 1.1rem;
-            text-align: right;
-        }
-        nav {
-            background: #fff;
-            padding: 0.5rem 0;
-            text-align: right;
-            border-bottom: 2px solid #b71c1c;
-            display: flex;
-            justify-content: flex-end;
-        }
-        nav a {
-            color: #b71c1c;
-            text-decoration: none;
-            margin: 0 1.5rem;
-            font-weight: bold;
-            transition: color 0.2s;
-        }
-        nav a:hover {
-            color: #d32f2f;
-        }
-        .hero {
-            padding: 3rem 1rem;
-            text-align: center;
-            background: #fff;
-        }
-        .hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: #b71c1c;
-        }
-        .hero p {
-            font-size: 1.2rem;
-            color: #444;
-        }
-        .features {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin: 2rem 0;
-        }
-        .feature {
-            background: #fff;
-            border: 2px solid #b71c1c;
-            border-radius: 8px;
-            margin: 1rem;
-            padding: 1.5rem;
-            width: 250px;
-            box-shadow: 0 2px 8px rgba(183,28,28,0.05);
-            text-align: center;
-        }
-        .feature h2 {
-            color: #b71c1c;
-            margin-bottom: 0.5rem;
-        }
-        footer {
-            background: #b71c1c;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 2rem;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -122,11 +18,11 @@
         </div>
     </header>
     <nav>
-        <a href="#">Home</a>
-        <a href="#">Gallery</a>
-        <a href="#">Competitions</a>
-        <a href="#">Trophies</a>
-        <a href="#">About</a>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="competitions.html">Competitions</a>
+        <a href="trophies.html">Trophies</a>
+        <a href="about.html">About</a>
     </nav>
     <section class="hero">
         <h1>Welcome to uWall</h1>
@@ -138,16 +34,22 @@
         <div class="feature">
             <h2>Photo Gallery</h2>
             <p>Browse and share photos from university fests and events.</p>
+            <a href="gallery.html">View Gallery</a>
         </div>
         <div class="feature">
             <h2>Competitions</h2>
             <p>See highlights and winners from various competitions.</p>
+            <a href="competitions.html">View Competitions</a>
         </div>
         <div class="feature">
             <h2>Trophy Showcase</h2>
             <p>Celebrate the achievements and trophies won by students.</p>
+            <a href="trophies.html">View Trophies</a>
         </div>
     </section>
     <footer>
         &copy; 2025 uWall | Chitkara University Punjab
     </footer>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
