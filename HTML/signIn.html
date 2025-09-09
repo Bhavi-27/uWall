@@ -1,11 +1,87 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>uWall · Chitkara University — Sign In</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+  <main class="container" role="main">
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="badge">uWall</div>
+
+      <div class="brand-row">
+        <div class="logo">CU</div>
+        <div class="brand">
+          <h1>uWall · Chitkara</h1>
+          <p class="small">Student hub for events, posts & campus life</p>
+        </div>
+      </div>
+
+      <h2 id="hero-title" class="big-title">Welcome back — make campus life louder.</h2>
+      <p class="lead">Discover events, share photos, join groups and stay updated with everything happening at Chitkara University. Quick, secure sign in to jump back in.</p>
+
+      <div class="features" aria-hidden="true">
+        <div class="feat">Event feeds</div>
+        <div class="feat">Photo walls</div>
+        <div class="feat">Clubs & Societies</div>
+        <div class="feat">Real-time notices</div>
+      </div>
+
+      <!-- decorative SVG corner -->
+      <svg width="220" height="220" viewBox="0 0 220 220" style="position:absolute;left:-30px;bottom:-30px;opacity:0.06;transform:rotate(-12deg)">
+        <defs>
+          <linearGradient id="g1" x1="0" x2="1">
+            <stop offset="0" stop-color="#d62828" />
+            <stop offset="1" stop-color="#0b7285" />
+          </linearGradient>
+        </defs>
+        <rect x="0" y="0" width="220" height="220" rx="28" fill="url(#g1)" />
+      </svg>
+    </section>
+
+    <aside class="card" aria-labelledby="signin-title">
+      <h3 id="signin-title" style="margin:0 0 6px;font-family:'Montserrat',sans-serif;color:#222">Sign in to uWall</h3>
+      <p class="muted" style="margin:0 0 16px">Use your Chitkara credentials to continue</p>
+
+      <form>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@chitkara.edu.in" required>
+        </div>
+
+        <div class="field">
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" placeholder="••••••••" required>
+        </div>
+
+        <div class="row" style="align-items:center">
+          <label class="remember"><input type="checkbox" id="remember"> <span class="small">Remember me</span></label>
+          <a href="#" class="small" style="color:var(--red-700);text-decoration:none">Forgot?</a>
+        </div>
+
+        <button class="btn" type="submit">Sign in</button>
+
+        <div style="display:flex;align-items:center;gap:12px;margin-top:8px">
+          <div class="or">or</div>
+        </div>
+
+        <div class="social">
+          <button type="button">Continue with Google</button>
+          <button type="button">Continue with GitHub</button>
+        </div>
+
+        <div style="margin-top:8px;text-align:center;font-size:13px;color:#666">
+          New to uWall? <a href="#" style="color:var(--red-700);font-weight:700;text-decoration:none">Create an account</a>
+        </div>
+      </form>
+
+      <footer class="sign-foot">By signing in you agree to the uWall <a href="#" style="color:var(--accent)">Terms</a> and <a href="#" style="color:var(--accent)">Privacy</a>.</footer>
+    </aside>
+  </main>
 </body>
 </html>
