@@ -42,7 +42,7 @@ body {
   align-items: center;
 }
 
-/* Left hero box */
+
 .hero {
   background: linear-gradient(180deg, var(--white), #fff9f9);
   border-radius: 20px;
@@ -110,7 +110,7 @@ body {
   font-size: 13px;
 }
 
-/* Right login card */
+
 .card {
   background: var(--glass);
   backdrop-filter: blur(10px);

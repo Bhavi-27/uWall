@@ -1,7 +1,7 @@
     :root{
-      --red-600: #d62828; /* primary red */
+      --red-600: #d62828; 
       --red-700: #c21f1f;
-      --accent: #0b7285; /* teal accent */
+      --accent: #0b7285; 
       --white: #ffffff;
       --muted: #f6f6f6;
       --card-shadow: 0 10px 30px rgba(0,0,0,0.12);
@@ -30,7 +30,6 @@
       align-items:center;
     }
 
-    /* Left: brand / marketing */
     .hero{
       background: linear-gradient(180deg,var(--white), #fff9f9);
       border-radius:20px;
@@ -71,12 +70,11 @@
     }
     .feat{background:rgba(210,40,40,0.06);border-left:4px solid var(--red-600);padding:10px 12px;border-radius:8px;font-size:13px}
 
-    /* Decorative floating badge */
+    
     .badge{
       position:absolute;right:18px;top:18px;background:var(--red-600);color:var(--white);padding:10px 14px;border-radius:999px;font-weight:700;box-shadow:0 8px 30px rgba(198,40,40,0.18);transform:rotate(-6deg)
     }
 
-    /* Right: form */
     .card{
       background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(255,255,255,0.92));
       border-radius:16px;padding:26px;box-shadow:var(--card-shadow);
@@ -108,7 +106,7 @@
 
     footer.sign-foot{margin-top:8px;font-size:13px;text-align:center;color:#666}
 
-    /* small devices */
+    
     @media (max-width:880px){
       .container{grid-template-columns:1fr;max-width:720px}
       .hero{order:2}
@@ -116,9 +114,8 @@
       .brand p.lead{max-width:100%}
     }
 
-    /* subtle floating animation for the logo */
+   
     @keyframes floaty{0%{transform:translateY(0)}50%{transform:translateY(-6px)}100%{transform:translateY(0)}}
     .logo{animation:floaty 4s ease-in-out infinite}
 
-    /* small nice focus for accessibility */
     input:focus-visible{outline:3px solid rgba(210,40,40,0.12)}
