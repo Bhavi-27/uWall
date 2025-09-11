@@ -49,14 +49,18 @@
       width: 50px;
       height: 50px;
       border-radius: 12px;
-      background: linear-gradient(135deg, var(--red-600), var(--red-700));
+      overflow: hidden; /* Add this to crop the image */
       display: flex;
       align-items: center;
       justify-content: center;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 18px;
-      font-weight: 900;
-      color: var(--white);
+      background: linear-gradient(135deg, var(--red-600), var(--red-700));
+    }
+    .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* This zooms/crops the image */
+      border-radius: 12px;
+      display: block;
     }
 
     nav ul {
@@ -182,17 +186,19 @@
 <body>
   <!-- Navigation Bar -->
   <header class="navbar">
-    <div class="logo">CU</div>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Clubs</a></li>
-        <li><a href="#">Notices</a></li>
-        <li><a href="#">Gallery</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div class="logo">
+    <img src="logo.jpg" alt="uWall Logo" style="width: 50px; height: 50px; border-radius: 12px;">
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Events</a></li>
+      <li><a href="#">Clubs</a></li>
+      <li><a href="#">Notices</a></li>
+      <li><a href="#">Gallery</a></li>
+    </ul>
+  </nav>
+</header>
 
   <!-- Hero Section -->
   <section class="hero">
